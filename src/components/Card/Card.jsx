@@ -5,9 +5,9 @@ const Card = ({product}) => {
     
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-xl border border-gray-100">
+            <div className="card bg-base-100 w-3/4 lg:w-96 mx-auto shadow-xl border border-gray-100 transition hover:scale-105">
                 <figure className="p-4">
-                    <img src={image} alt="Shoes" className="w-80 h-72 rounded-2xl"/>
+                    <img src={image} alt="Shoes" className="w-3/4 lg:w-80 h-56 lg:h-72 rounded-2xl"/>
                 </figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>

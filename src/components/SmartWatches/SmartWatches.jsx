@@ -19,7 +19,7 @@ const SmartWatches = () => {
         )
     }
     return (
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {
                 product.map(product => <Card key={product.id} product={product}></Card>)
             }

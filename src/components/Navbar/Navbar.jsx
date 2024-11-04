@@ -43,8 +43,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-5 pr-4">
-    <button><MdOutlineShoppingCart className="text-3xl" /></button>
-    <button><GiSelfLove className="text-3xl" /></button>
+  <NavLink to={"cartlist"}><button><MdOutlineShoppingCart className="text-3xl" /></button></NavLink>
+  <NavLink to={"wishlist"}><button><GiSelfLove className="text-3xl" /></button></NavLink>
+    
+    
   </div>
 </div>
     );

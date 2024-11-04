@@ -19,11 +19,11 @@ const Home = () => {
             <div className='w-3/4 mx-auto rounded-2xl border-2 border-white p-4 mt-[-100px] lg:mt-[-450px]'>
             <img src= {banner} alt="Banner" className='rounded-2xl' />
             </div>
-            <div className='mt-40'>
-            <h3 className='text-center font-bold text-4xl my-20'>
+            <div className='lg:mt-40'>
+            <h3 className='text-center font-bold text-4xl my-10 lg:my-20'>
                 Explore Cutting-Edge Gadgets
                 </h3>
-            <div className='flex justify-between'>
+            <div className='flex lg:flex-row flex-col gap-5 lg:justify-between'>
                 <Categories></Categories>
                 <Outlet></Outlet>
             </div>
