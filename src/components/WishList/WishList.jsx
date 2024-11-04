@@ -2,8 +2,8 @@
 
 const WishList = () => {
     return (
-        <div>
-            <h3>This Is WishList</h3>
+        <div className="w-3/4 mx-auto">
+            <h3 className="text-xl font-bold">WishList</h3>
         </div>
     );
 };

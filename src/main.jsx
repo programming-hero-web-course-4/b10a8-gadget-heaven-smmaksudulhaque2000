@@ -70,19 +70,21 @@ const router = createBrowserRouter([
       },
       {
         path: 'statistics',
-        element: <Statistics></Statistics>
+        element: <Statistics></Statistics>,
       },
       {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>
-      },
-      {
-        path: 'cartlist',
-        element: <CartList></CartList>
-      },
-      {
-        path: 'wishlist',
-        element: <WishList></WishList>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: 'cartlist',
+            element: <CartList></CartList>,
+          },
+          {
+            path: 'wishlist',
+            element: <WishList></WishList>,
+          },
+        ]
       },
     ]
   },
