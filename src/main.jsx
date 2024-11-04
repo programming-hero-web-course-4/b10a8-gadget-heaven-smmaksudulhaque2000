@@ -13,6 +13,13 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import CartList from './components/CartList/CartList';
 import WishList from './components/WishList/WishList';
+import AllProduct from './components/AllProduct/AllProduct';
+import Laptops from './components/Laptops/Laptops';
+import Phones from './components/Phones/Phones';
+import Accessories from './components/Accessories/Accessories';
+import SmartWatches from './components/SmartWatches/SmartWatches';
+import Macbook from './components/Macbook/Macbook';
+import Iphone from './components/Iphone/Iphone';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +29,39 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        children: [
+          {
+            path:'/',
+            element: <AllProduct></AllProduct>,
+            loader: () => fetch('../public/fakeData.json'),
+          },
+          {
+            path: 'laptops',
+            element: <Laptops></Laptops>,
+            loader: () => fetch('../public/fakeData.json'),
+          },
+          {
+            path: 'phones',
+            element: <Phones></Phones>
+          },
+          {
+            path: 'accessories',
+            element: <Accessories></Accessories>
+          },
+          {
+            path: 'smartwatches',
+            element: <SmartWatches></SmartWatches>
+          },
+          {
+            path: 'macbook',
+            element: <Macbook></Macbook>
+          },
+          {
+            path: 'iphone',
+            element: <Iphone></Iphone>
+          },
+        ]
       },
       {
         path: 'statistics',

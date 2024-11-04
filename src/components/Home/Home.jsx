@@ -1,8 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import banner from '../../assets/banner.jpg'
+import Categories from '../Categories/Categories';
 
 const Home = () => {
     return (
-        <div className='mt-[-80px] '>
+        <div className='mt-[-80px]'>
             <div className='border-2 p-2 rounded-xl'>
             <div className="hero h-[600px] lg:min-h-screen bg-purple-500 rounded-xl">
             <div className="hero-content text-center mt-[-100px] lg:mt-[-400px]">
@@ -16,6 +18,15 @@ const Home = () => {
             </div>
             <div className='w-3/4 mx-auto rounded-2xl border-2 border-white p-4 mt-[-100px] lg:mt-[-450px]'>
             <img src= {banner} alt="Banner" className='rounded-2xl' />
+            </div>
+            <div className='mt-40'>
+            <h3 className='text-center font-bold text-4xl my-20'>
+                Explore Cutting-Edge Gadgets
+                </h3>
+            <div className='flex justify-between'>
+                <Categories></Categories>
+                <Outlet></Outlet>
+            </div>
             </div>
         </div>
     );
