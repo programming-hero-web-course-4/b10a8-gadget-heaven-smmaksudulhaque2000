@@ -43,23 +43,28 @@ const router = createBrowserRouter([
           },
           {
             path: 'phones',
-            element: <Phones></Phones>
+            element: <Phones></Phones>,
+            loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'accessories',
-            element: <Accessories></Accessories>
+            element: <Accessories></Accessories>,
+            loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'smartwatches',
-            element: <SmartWatches></SmartWatches>
+            element: <SmartWatches></SmartWatches>,
+            loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'macbook',
-            element: <Macbook></Macbook>
+            element: <Macbook></Macbook>,
+            loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'iphone',
-            element: <Iphone></Iphone>
+            element: <Iphone></Iphone>,
+            loader: () => fetch('../public/fakeData.json'),
           },
         ]
       },

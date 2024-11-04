@@ -1,6 +1,7 @@
 [
       {
         "id" : 1,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/bP4zXBG/Xphone-Z-Pro.jpg",
         "name": "Xphone Z Pro",
         "model": "XPZ-2024",
@@ -18,6 +19,7 @@
       },
       {
         "id" : 2,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/Jr3zxJP/Tab-Plus-M10.jpg",
         "name": "TabPlus M10",
         "model": "TPM10-Gen3",
@@ -35,6 +37,7 @@
       },
       {
         "id" : 3,
+        "product" : "smartwatch",
         "image": "https://i.ibb.co.com/6HR6BRF/Fit-Track-Ultra.jpg",
         "name": "FitTrack Ultra",
         "model": "FTR-ULTRA",
@@ -50,6 +53,7 @@
       },
       {
         "id" : 4,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/VCV0HV3/Sound-Max-Pro-Wireless.jpg",
         "name": "SoundMax Pro Wireless",
         "model": "SMP-WL500",
@@ -65,6 +69,7 @@
       },
       {
         "id" : 5,
+        "product" : "laptop",
         "image": "https://i.ibb.co.com/xfX31Wm/Lite-Book-S13.jpg",
         "name": "LiteBook S13",
         "model": "LBS13-2024",
@@ -82,6 +87,7 @@
       },
       {
         "id" : 6,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/MNHWQgd/Game-Box-V.jpg",
         "name": "GameBox V",
         "model": "GBX-V",
@@ -98,6 +104,7 @@
       },
       {
         "id" : 7,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/vZNXbZ8/Sky-Cam-Pro-X.jpg",
         "name": "SkyCam Pro X",
         "model": "SCPX-2024",
@@ -114,6 +121,7 @@
       },
       {
         "id" : 8,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/6HtqrdV/Boom-Sound-Mini.jpg",
         "name": "BoomSound Mini",
         "model": "BSM2024",
@@ -129,6 +137,7 @@
       },
       {
         "id" : 9,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/VYH0hNb/Read-Well-Paper-Lite.jpg",
         "name": "ReadWell Paper Lite",
         "model": "RPL-2024",
@@ -144,6 +153,7 @@
       },
       {
         "id" : 10,
+        "product" : "accessories",
         "image": "https://i.ibb.co.com/LZqQScL/Home-Hub-360.jpg",
         "name": "HomeHub 360",
         "model": "HH360-2024",
@@ -159,6 +169,7 @@
       },
       {
         "id": 11,
+        "product" : "laptop",
         "image": "https://i.ibb.co.com/z4Xf4sS/Pro-Book-X15.jpg",
         "name": "ProBook X15",
         "model": "PBX15-2024",
@@ -176,6 +187,7 @@
       },
       {
         "id": 12,
+        "product" : "laptop",
         "image": "https://i.ibb.co.com/DWXDXDQ/Zen-Lite-Ultra-14.jpg",
         "name": "ZenLite Ultra 14",
         "model": "ZLU14-2024",
@@ -193,6 +205,7 @@
       },
       {
         "id": 13,
+        "product" : "laptop",
         "image": "https://i.ibb.co.com/k1N05Vd/Alpha-Book-17-X.jpg",
         "name": "AlphaBook 17X",
         "model": "AB17X-2024",
@@ -210,6 +223,7 @@
       },
       {
         "id": 14,
+        "product" : "laptop",
         "image": "https://i.ibb.co.com/JqXs8Nj/Eco-Book-Slim-13.jpg",
         "name": "EcoBook Slim 13",
         "model": "EBS13-2024",
@@ -227,6 +241,7 @@
       },
       {
         "id": 15,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/tcs2Dn1/Smartphone-X10.jpg",
         "name": "Smartphone X10",
         "model": "S10-2024",
@@ -244,6 +259,7 @@
       },
       {
         "id": 16,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/JkKkdPq/Galaxy-S21.jpg",
         "name": "Galaxy S21",
         "model": "G21-2024",
@@ -261,6 +277,7 @@
       },
       {
         "id": 17,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/L89zP8z/One-Plus-9.jpg",
         "name": "OnePlus 9",
         "model": "OP9-2024",
@@ -278,6 +295,7 @@
       },
       {
         "id": 18,
+        "product" : "phone",
         "image": "https://i.ibb.co.com/024nqGR/Xiaomi-Redmi-Note-10.jpg",
         "name": "Xiaomi Redmi Note 10",
         "model": "RN10-2024",
