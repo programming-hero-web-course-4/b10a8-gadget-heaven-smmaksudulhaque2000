@@ -20,6 +20,7 @@ import Accessories from './components/Accessories/Accessories';
 import SmartWatches from './components/SmartWatches/SmartWatches';
 import Macbook from './components/Macbook/Macbook';
 import Iphone from './components/Iphone/Iphone';
+import Details from './components/Details/Details';
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,11 @@ const router = createBrowserRouter([
             element: <WishList></WishList>,
           },
         ]
+      },
+      {
+        path: 'details/:id',
+        element: <Details></Details>,
+        loader: () => fetch('../public/fakeData.json'),
       },
     ]
   },

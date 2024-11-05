@@ -13,6 +13,7 @@
           "ram": "12GB",
           "storage": "256GB",
           "battery": "5000mAh",
+          "weight": "0.3 kg",
           "camera": "Triple rear cameras (108MP + 12MP + 8MP), 32MP front camera",
           "os": "Android 14",
         "rating": 4.7
@@ -31,6 +32,7 @@
           "ram": "6GB",
           "storage": "128GB (expandable up to 1TB)",
           "battery": "7000mAh",
+          "weight": "1.0 kg",
           "camera": "13MP rear, 8MP front",
           "os": "Android 13",
         "rating": 4.4
@@ -45,8 +47,12 @@
         "stockStatus": "In Stock",
         "description": "Designed for fitness enthusiasts, the FitTrack Ultra smartwatch offers health tracking, GPS, and real-time stats. Its sleek design and long-lasting battery make it an ideal accessory.",
           "display": "1.4-inch AMOLED, 360x360 resolution",
+          "processor": "Octa-core 3.2 GHz",
+          "storage": "256GB",
           "batteryLife": "Up to 10 days",
           "waterResistance": "5 ATM",
+          "battery": "Up to 12 hours",
+          "weight": "1.5 kg",
           "sensors": "Heart rate, SpO2, GPS, accelerometer",
           "compatibility": "iOS & Android",
         "rating": 4.6
@@ -61,9 +67,13 @@
         "stockStatus": "In Stock",
         "description": "The SoundMax Pro delivers immersive sound quality with noise-cancellation technology. Ideal for both calls and music, these headphones offer all-day comfort and reliable connectivity.",
           "type": "Over-Ear",
+          "processor": "Octa-core 3.2 GHz",
+          "storage": "256GB",
           "batteryLife": "Up to 40 hours",
           "chargingTime": "2 hours (Quick Charge: 10 mins for 3 hours of playtime)",
           "connectivity": "Bluetooth 5.2, AUX",
+          "battery": "Up to 12 hours",
+          "weight": "1.5 kg",
           "noiseCancellation": "Active",
         "rating": 4.5
       },
@@ -99,6 +109,8 @@
           "ram": "16GB GDDR6",
           "storage": "1TB SSD",
           "resolution": "4K, HDR",
+          "battery": "Up to 12 hours",
+          "weight": "1.5 kg",
           "controller": "Wireless DualSense",
         "rating": 4.9
       },
@@ -111,12 +123,15 @@
         "price": 799,
         "stockStatus": "Out of Stock",
         "description": "Capture stunning aerial photos and videos with the SkyCam Pro X, featuring a high-definition camera and advanced stabilization for smooth, professional-quality footage.",
+        "processor": "Octa-core 3.2 GHz",
+        "storage": "256GB",
           "camera": "4K Ultra HD",
           "batteryLife": "30 minutes per charge",
           "range": "5 km",
           "stabilization": "3-axis gimbal",
           "gps": "Yes",
           "weight": "0.8 kg",
+          "battery": "5000mAh",
         "rating": 4.7
       },
       {
@@ -128,9 +143,13 @@
         "price": 89,
         "stockStatus": "In Stock",
         "description": "Compact yet powerful, the BoomSound Mini delivers impressive sound quality with deep bass, perfect for small gatherings or outdoor adventures.",
+        "processor": "Octa-core 3.2 GHz",
+        "storage": "256GB",
           "batteryLife": "10 hours",
           "waterResistance": "IPX7",
           "bluetooth": "5.1",
+          "battery": "Up to 12 hours",
+          "weight": "1.5 kg",
           "chargingTime": "2 hours",
           "output": "20W",
         "rating": 4.3
@@ -145,10 +164,12 @@
         "stockStatus": "In Stock",
         "description": "Enjoy reading anywhere with the ReadWell Paper Lite, featuring a glare-free screen, adjustable lighting, and a lightweight design for maximum comfort.",
           "display": "6-inch e-Ink, 1440x1080 resolution",
+          "processor": "Octa-core 3.2 GHz",
           "storage": "8GB",
           "batteryLife": "4 weeks",
           "connectivity": "Wi-Fi",
           "weight": "200g",
+          "battery": "5000mAh",
         "rating": 4.6
       },
       {
@@ -161,7 +182,11 @@
         "stockStatus": "Out of Stock",
         "description": "Control your smart home effortlessly with the HomeHub 360. Compatible with major IoT devices and voice assistants, it brings convenience and security to your fingertips.",
           "connectivity": "Wi-Fi, Bluetooth, Zigbee",
+          "processor": "Octa-core 3.2 GHz",
+          "storage": "256GB",
           "voiceAssistants": "Alexa, Google Assistant",
+          "battery": "Up to 12 hours",
+          "weight": "1.5 kg",
           "display": "5.5-inch touch screen",
           "audio": "Dual speakers",
           "microphones": "Far-field array",
@@ -253,6 +278,7 @@
         "ram": "8GB",
         "storage": "128GB",
         "battery": "4500mAh",
+        "weight": "1.0 kg",
         "camera": "Dual rear cameras (64MP + 8MP), 16MP front camera",
         "os": "Android 13",
         "rating": 4.6
@@ -271,6 +297,7 @@
         "ram": "8GB",
         "storage": "256GB",
         "battery": "4000mAh",
+        "weight": "1.0 kg",
         "camera": "Triple rear cameras (12MP + 64MP + 12MP), 10MP front camera",
         "os": "Android 12",
         "rating": 4.8
@@ -289,6 +316,7 @@
         "ram": "12GB",
         "storage": "256GB",
         "battery": "4500mAh",
+        "weight": "1.0 kg",
         "camera": "Triple rear cameras (48MP + 50MP + 2MP), 16MP front camera",
         "os": "Android 12",
         "rating": 4.7
@@ -307,6 +335,7 @@
         "ram": "4GB",
         "storage": "64GB",
         "battery": "5000mAh",
+        "weight": "1.0 kg",
         "camera": "Quad rear cameras (48MP + 8MP + 2MP + 2MP), 13MP front camera",
         "os": "Android 11",
         "rating": 4.5

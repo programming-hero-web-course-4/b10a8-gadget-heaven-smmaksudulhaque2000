@@ -1,7 +1,8 @@
 import { FaDollarSign } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Card = ({product}) => {
 
-    const {image, name, price} = product;
+    const {image, name, price, id} = product;
     
     return (
         <div>
@@ -15,7 +16,7 @@ const Card = ({product}) => {
                 <FaDollarSign /> {price}
                 </div>
                 <div className="card-actions">
-                <button className="btn btn-outline btn-primary rounded-full">View Details</button>
+                <Link to={`/details/${id}`} className="btn btn-outline btn-primary rounded-full">View Details</Link>
                 </div>
             </div>
             </div>
