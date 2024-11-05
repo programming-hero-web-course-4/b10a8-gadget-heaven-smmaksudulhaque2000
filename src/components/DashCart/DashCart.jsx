@@ -1,4 +1,5 @@
 import { MdDeleteForever } from "react-icons/md";
+import toast from "react-hot-toast";
 
 const DashCart = ({product, handleRemoved}) => {
     const {image, name, description, price, id} = product;
@@ -8,7 +9,7 @@ const DashCart = ({product, handleRemoved}) => {
     return (
         <div className="my-10 shadow-xl rounded-xl border border-gray-100">
             <div className="flex gap-5">
-                <figure className="p-10">
+                <figure className="p-10 w-1/4">
                     <img src={image} alt="Shoes" className="rounded-xl"/>
                 </figure>
             <div className="w-3/4 flex flex-col justify-center gap-5 pr-5">
@@ -16,7 +17,7 @@ const DashCart = ({product, handleRemoved}) => {
                 <p className="text-gray-500 text-xs">{description}</p>
                 <h3 className="font-bold">Price: $ {price}</h3>
             </div>
-            <div className="text-4xl text-red-500 mr-3 mt-2 cursor-pointer">
+            <div onClick={()=>toast.success('Successfully Removed To Cart!')} className="text-4xl text-red-500 mr-3 mt-2 cursor-pointer">
             <MdDeleteForever onClick={() => handleRemoved(id)} />
             </div>
             </div>

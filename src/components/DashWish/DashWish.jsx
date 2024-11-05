@@ -14,7 +14,7 @@ const DashWish = ({product, handleRemoved}) => {
     return (
         <div className="my-10 shadow-xl rounded-xl border border-gray-100">
             <div className="flex gap-5">
-                <figure className="p-10">
+                <figure className="p-10 w-1/4">
                     <img src={image} alt="Shoes" className="rounded-xl"/>
                 </figure>
             <div className="w-3/4 flex flex-col justify-center gap-5 pr-5">

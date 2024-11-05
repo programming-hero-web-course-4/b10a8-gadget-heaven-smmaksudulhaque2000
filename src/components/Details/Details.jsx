@@ -15,7 +15,7 @@ const Details = () => {
         
     } ,[])
 
-    const{name, image, model, price, stockStatus, description, processor, battery, weight, storage, rating} = details;
+    const{name, image, price, stockStatus, description, processor, battery, weight, storage, rating} = details;
 
     const handleCartList = (details) => {
         addCartList(details)

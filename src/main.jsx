@@ -1,11 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
+import { 
+  createBrowserRouter, 
+  RouterProvider 
 } from "react-router-dom";
+
 import Root from './components/Root/Root';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
@@ -25,71 +26,71 @@ import Details from './components/Details/Details';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
-    errorElement: <Error></Error>,
+    element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
-        element: <Home></Home>,
+        element: <Home />,
         children: [
           {
-            path:'/',
-            element: <AllProduct></AllProduct>,
+            path: '/',
+            element: <AllProduct />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'laptops',
-            element: <Laptops></Laptops>,
+            element: <Laptops />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'phones',
-            element: <Phones></Phones>,
+            element: <Phones />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'accessories',
-            element: <Accessories></Accessories>,
+            element: <Accessories />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'smartwatches',
-            element: <SmartWatches></SmartWatches>,
+            element: <SmartWatches />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'macbook',
-            element: <Macbook></Macbook>,
+            element: <Macbook />,
             loader: () => fetch('../public/fakeData.json'),
           },
           {
             path: 'iphone',
-            element: <Iphone></Iphone>,
+            element: <Iphone />,
             loader: () => fetch('../public/fakeData.json'),
           },
         ]
       },
       {
         path: 'statistics',
-        element: <Statistics></Statistics>,
+        element: <Statistics />,
       },
       {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <Dashboard />,
         children: [
           {
             path: 'cartlist',
-            element: <CartList></CartList>,
+            element: <CartList />,
           },
           {
             path: 'wishlist',
-            element: <WishList></WishList>,
+            element: <WishList />,
           },
         ]
       },
       {
         path: 'details/:id',
-        element: <Details></Details>,
+        element: <Details />,
         loader: () => fetch('../public/fakeData.json'),
       },
     ]
@@ -99,5 +100,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+  </StrictMode>
+);
