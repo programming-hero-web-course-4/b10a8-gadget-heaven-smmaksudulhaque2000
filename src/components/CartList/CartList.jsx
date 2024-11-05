@@ -1,7 +1,20 @@
+import { useEffect, useState } from "react";
+import { deleteCartList, getCartList } from "../Utils";
+import Card from "../Card/Card";
+import DashCard from "../DashCard/DashCard";
 
 
 const WishList = () => {
-
+    const [cart, srtCart] = useState([])
+    useEffect(() => {
+        const cartList = getCartList()
+        srtCart(cartList)
+    } ,[])
+    const handleRemoved = (id) =>{
+        deleteCartList(id)
+        const cartList = getCartList()
+        srtCart(cartList)
+    }
 
     return (
         <div className="w-3/4 mx-auto">
@@ -16,6 +29,11 @@ const WishList = () => {
                     <button className="btn">Purchase</button>
                     </div>
                 </div>
+            </div>
+            <div>
+                {
+                    cart.map(cart => <DashCard handleRemoved={handleRemoved} product={cart} key= {cart.id}></DashCard>)
+                }
             </div>
         </div>
     );

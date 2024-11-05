@@ -10,9 +10,8 @@ const Dashboard = () => {
             </div>
             <div className="flex gap-5">
 
-            <NavLink className={({isActive}) => `border border-gray-200 text-white w-36 text-center p-4 btn-outline font-bold rounded-full bg-transparent ${isActive ? 'bg-white text-purple-800' : 'hover:text-warning'}`} to={"/dashboard/cartlist"}>Cart</NavLink>
-            <NavLink className={({isActive}) => `border border-gray-200 text-white w-36 text-center p-4 btn-outline font-bold rounded-full bg-transparent ${isActive ? 'bg-white text-purple-800' : 'hover:text-warning'}`} to={"/dashboard/wishlist"}>Wishlist</NavLink>
-
+            <NavLink className={({isActive}) => `border border-gray-200 text-white w-36 text-center p-4 btn-outline font-bold rounded-full bg-transparent ${isActive ? 'bg-white text-purple-600' : 'hover:text-warning'}`} to={"/dashboard/cartlist"}>Cart</NavLink>
+            <NavLink className={({isActive}) => `border border-gray-200 text-white w-36 text-center p-4 btn-outline font-bold rounded-full bg-transparent ${isActive ? 'bg-white text-purple-600' : 'hover:text-warning'}`} to={"/dashboard/wishlist"}>Wishlist</NavLink>
             </div>
         </div>
         <div className="mt-10">

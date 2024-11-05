@@ -2,18 +2,24 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
 import { GiSelfLove } from "react-icons/gi";
+import { addCartList } from "../Utils";
 
 const Details = () => {
     const fakeData = useLoaderData(); 
     const {id} = useParams()
-
     const [details, setDetails] = useState({})
+    
     useEffect(() => {
         const singleDetails = fakeData.find(details => details.id === parseInt(id))
         setDetails(singleDetails)
+
     } ,[])
 
     const{name, image, model, price, stockStatus, description, processor, battery, weight, storage, rating} = details;
+
+    const handleCartList = (details) => {
+        addCartList(details)
+    }
     
     return (
         <div>
@@ -56,13 +62,13 @@ const Details = () => {
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <button className="flex items-center text-white gap-2 bg-purple-700 py-2 px-4 rounded-full">Add To Card <IoMdCart /></button>
+                                <button onClick={()=>handleCartList(details)} className="flex items-center text-white gap-2 bg-purple-700 py-2 px-4 rounded-full">Add To Card <IoMdCart /></button>
                                 <button className="p-2 border rounded-full text-2xl"><GiSelfLove /></button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
     );
 };
