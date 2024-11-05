@@ -1,20 +1,27 @@
 import { MdDeleteForever } from "react-icons/md";
+import { addCartList } from "../Utils";
+import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
+import Details from "../Details/Details";
 
-const DashCard = ({product, handleRemoved}) => {
+const DashWish = ({product, handleRemoved}) => {
     const {image, name, description, price, id} = product;
 
+    const handleCartList = (product) => {
+        addCartList(product)
+    }
 
-    
     return (
         <div className="my-10 shadow-xl rounded-xl border border-gray-100">
             <div className="flex gap-5">
                 <figure className="p-10">
                     <img src={image} alt="Shoes" className="rounded-xl"/>
                 </figure>
-            <div className="flex flex-col justify-center gap-5 pr-5">
+            <div className="w-3/4 flex flex-col justify-center gap-5 pr-5">
                 <h2 className="card-title">{name}</h2>
                 <p className="text-gray-500 text-xs">{description}</p>
                 <h3 className="font-bold">Price: $ {price}</h3>
+                <button onClick={()=>handleCartList(product)} className="w-1/4 text-white gap-2 bg-purple-700 py-2  rounded-full">Add To Card </button>
             </div>
             <div className="text-4xl text-red-500 mr-3 mt-2 cursor-pointer">
             <MdDeleteForever onClick={() => handleRemoved(id)} />
@@ -24,4 +31,4 @@ const DashCard = ({product, handleRemoved}) => {
     );
 };
 
-export default DashCard;
+export default DashWish;

@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import banner from '../../assets/banner.jpg'
 import Categories from '../Categories/Categories';
 
@@ -11,7 +11,8 @@ const Home = () => {
             <div>
                 <h1 className="text-3xl lg:text-6xl font-bold text-white leading-snug">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className="py-5 max-w-3xl mx-auto text-gray-300">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            <button className="btn bg-white rounded-full text-purple-700 font-bold">Shop Now</button>
+            {/* <button className="btn bg-white rounded-full text-purple-700 font-bold">Shop Now</button> */}
+            <Link to={"/dashboard/cartList"} className='bg-white text-purple-700 font-bold p-4 rounded-full'>Shop Now</Link>
             </div>
             </div>
             </div>

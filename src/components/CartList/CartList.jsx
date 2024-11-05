@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { deleteCartList, getCartList } from "../Utils";
-import Card from "../Card/Card";
-import DashCard from "../DashCard/DashCard";
+import DashCart from "../DashCart/DashCart";
 
-
-const WishList = () => {
-    const [cart, srtCart] = useState([])
+const CartList = () => {
+    const [cart, setCart] = useState([])
     useEffect(() => {
         const cartList = getCartList()
-        srtCart(cartList)
+        setCart(cartList)
     } ,[])
     const handleRemoved = (id) =>{
         deleteCartList(id)
         const cartList = getCartList()
-        srtCart(cartList)
+        setCart(cartList)
     }
 
     return (
@@ -32,11 +30,11 @@ const WishList = () => {
             </div>
             <div>
                 {
-                    cart.map(cart => <DashCard handleRemoved={handleRemoved} product={cart} key= {cart.id}></DashCard>)
+                    cart.map(cart => <DashCart handleRemoved={handleRemoved} product={cart} key= {cart.id}></DashCart>)
                 }
             </div>
         </div>
     );
 };
 
-export default WishList;
+export default CartList;
