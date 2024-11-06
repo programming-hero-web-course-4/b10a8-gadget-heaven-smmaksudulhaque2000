@@ -22,6 +22,7 @@ import SmartWatches from './components/SmartWatches/SmartWatches';
 import Macbook from './components/Macbook/Macbook';
 import Iphone from './components/Iphone/Iphone';
 import Details from './components/Details/Details';
+import Support from './components/Support/Support';
 
 const router = createBrowserRouter([
   {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
             element: <WishList />,
           },
         ]
+      },
+      {
+        path: 'support',
+        element: <Support />,
       },
       {
         path: 'details/:id',

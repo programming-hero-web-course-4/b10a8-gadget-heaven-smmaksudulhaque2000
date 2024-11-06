@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
 import { GiSelfLove } from "react-icons/gi";
 import { addCartList, addWishList } from "../Utils";
+import { Helmet } from 'react-helmet';
 
 const Details = () => {
     const fakeData = useLoaderData(); 
@@ -26,6 +27,11 @@ const Details = () => {
     
     return (
         <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Details | Gadget Heaven</title>
+                <link rel="canonical" href="http://localhost:5173/details" />
+                </Helmet>
             <div className="px-2">
             <div className="bg-purple-700 rounded-xl p-10 flex flex-col justify-center items-center gap-10 h-96">
             <div>

@@ -4,6 +4,7 @@ import DashCart from "../DashCart/DashCart";
 import { GiSettingsKnobs } from "react-icons/gi";
 import mark from "../../assets/Group.png";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const CartList = () => {
     const [cart, setCart] = useState([]);
@@ -46,6 +47,13 @@ const CartList = () => {
 
     return (
         <div className="w-3/4 mx-auto">
+{cart.length}
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cart | Gadget Heaven</title>
+                <link rel="canonical" href="http://localhost:5173/dashboard/cartlist" />
+                </Helmet>
+                
             <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold">Cart</h3>
                 <div className="flex flex-col lg:flex-row items-center gap-5">
@@ -71,7 +79,6 @@ const CartList = () => {
                     <DashCart handleRemoved={handleRemoved} product={cartItem} key={cartItem.id} />
                 ))}
             </div>
-
             {purchaseSuccess && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="w-1/4 bg-white p-5 rounded-lg text-center flex flex-col items-center justify-center gap-5">

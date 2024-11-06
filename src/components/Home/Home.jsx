@@ -1,17 +1,22 @@
 import { Link, Outlet } from 'react-router-dom';
 import banner from '../../assets/banner.jpg'
 import Categories from '../Categories/Categories';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return (
         <div className='mt-[-80px]'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home | Gadget Heaven</title>
+                <link rel="canonical" href="http://localhost:5173/" />
+            </Helmet>
             <div className='border-2 p-2 rounded-xl'>
             <div className="hero h-[600px] lg:min-h-screen bg-purple-500 rounded-xl">
             <div className="hero-content text-center mt-[-100px] lg:mt-[-400px]">
             <div>
                 <h1 className="text-3xl lg:text-6xl font-bold text-white leading-snug">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className="py-5 max-w-3xl mx-auto text-gray-300">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            {/* <button className="btn bg-white rounded-full text-purple-700 font-bold">Shop Now</button> */}
             <Link to={"/dashboard/cartList"} className='bg-white text-purple-700 font-bold p-4 rounded-full'>Shop Now</Link>
             </div>
             </div>

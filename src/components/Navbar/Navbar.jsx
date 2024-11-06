@@ -8,7 +8,8 @@ const Navbar = () => {
     const links = <>
         <li className="text-gray-600 font-bold"><NavLink to={"/"}>Home</NavLink></li>
         <li className="text-gray-600 font-bold"><NavLink to={"/statistics"}>Statistics</NavLink></li>
-        <li className="text-gray-600 font-bold"><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
+        <li className="text-gray-600 font-bold"><NavLink to={"/dashboard/cartlist"}>Dashboard</NavLink></li>
+        <li className="text-gray-600 font-bold"><NavLink to={"/support"}>Support</NavLink></li>
     </>
 
     return (
@@ -43,7 +44,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-5 pr-4">
-  <NavLink to={"cartlist"}><button><MdOutlineShoppingCart className="text-3xl" /></button></NavLink>
+  <NavLink to={"cartlist"}><button><MdOutlineShoppingCart className="text-3xl" /> <span className="absolute mt-[-43px] ml-[10px]">0</span></button></NavLink>
   <NavLink to={"wishlist"}><button><GiSelfLove className="text-3xl" /></button></NavLink>
     
     

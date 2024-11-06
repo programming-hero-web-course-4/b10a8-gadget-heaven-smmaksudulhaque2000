@@ -1,8 +1,14 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     return (
         <div className="px-2">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Dashboard | Gadget Heaven</title>
+                <link rel="canonical" href="http://localhost:5173/dashboard" />
+            </Helmet>
             <div className="bg-purple-700 rounded-xl p-10 flex flex-col justify-center items-center gap-10">
             <div>
             <h3 className="text-center font-bold text-5xl text-white">Dashboard</h3>
