@@ -47,13 +47,12 @@ const CartList = () => {
 
     return (
         <div className="w-3/4 mx-auto">
-{/* {cart.length} */}
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Cart | Gadget Heaven</title>
                 <link rel="canonical" href="http://localhost:5173/dashboard/cartlist" />
-                </Helmet>
-                
+            </Helmet>
+
             <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold">Cart</h3>
                 <div className="flex flex-col lg:flex-row items-center gap-5">
@@ -63,7 +62,8 @@ const CartList = () => {
                             onClick={handleSortByPrice} 
                             className="bg-transparent border border-purple-700 text-purple-700 p-2 rounded-full font-bold px-3 flex items-center gap-2"
                         >
-                            Sort by price <GiSettingsKnobs className="text-2xl"/>
+                            Sort by price 
+                            <GiSettingsKnobs className="text-2xl" />
                         </button>
                         <button 
                             onClick={handlePurchase} 
@@ -74,11 +74,17 @@ const CartList = () => {
                     </div>
                 </div>
             </div>
+
             <div>
                 {cart.map(cartItem => (
-                    <DashCart handleRemoved={handleRemoved} product={cartItem} key={cartItem.id} />
+                    <DashCart 
+                        handleRemoved={handleRemoved} 
+                        product={cartItem} 
+                        key={cartItem.id} 
+                    />
                 ))}
             </div>
+
             {purchaseSuccess && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="w-1/4 bg-white p-5 rounded-lg text-center flex flex-col items-center justify-center gap-5">

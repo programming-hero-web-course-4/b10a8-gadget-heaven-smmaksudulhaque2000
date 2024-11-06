@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import { MdExpandMore } from "react-icons/md";
 
 const AllProduct = () => {
-    const fakeData = useLoaderData(); 
+    const fakeData = useLoaderData();
     const [visibleProducts, setVisibleProducts] = useState(6);
 
     const showMoreProducts = () => {
@@ -21,7 +21,8 @@ const AllProduct = () => {
                     onClick={showMoreProducts} 
                     className="col-span-full bg-purple-700 text-white py-2 font-bold px-4 rounded flex justify-center items-center"
                 >
-                    Show More<MdExpandMore className="text-2xl" />
+                    Show More
+                    <MdExpandMore className="text-2xl" />
                 </button>
             )}
         </div>
