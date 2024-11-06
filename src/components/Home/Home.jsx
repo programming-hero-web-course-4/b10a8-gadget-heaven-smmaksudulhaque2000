@@ -14,10 +14,10 @@ const Home = () => {
             <div className='border-2 p-2 rounded-xl'>
             <div className="hero h-[600px] lg:min-h-screen bg-purple-500 rounded-xl">
             <div className="hero-content text-center mt-[-100px] lg:mt-[-400px]">
-            <div>
+            <div className='flex flex-col gap-5 justify-center items-center mt-10'>
                 <h1 className="text-3xl lg:text-6xl font-bold text-white leading-snug">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className="py-5 max-w-3xl mx-auto text-gray-300">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            <Link to={"/dashboard/cartList"} className='bg-white text-purple-700 font-bold p-4 rounded-full'>Shop Now</Link>
+            <Link to={"/dashboard/cartList"} className='w-40 bg-white text-purple-700 font-bold p-4 lg:px-6 rounded-full'>Shop Now</Link>
             </div>
             </div>
             </div>

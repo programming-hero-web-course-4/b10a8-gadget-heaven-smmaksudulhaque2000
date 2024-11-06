@@ -68,7 +68,7 @@ const Support = () => {
 
             <h3 className="text-center font-bold text-3xl">This is support</h3>
 
-            <form onSubmit={handleSubmit} className="bg-purple-400 border border-gray-100 rounded-xl my-5 p-5 shadow-xl grid grid-cols-3 gap-5">
+            <form onSubmit={handleSubmit} className="bg-purple-400 border border-gray-100 rounded-xl my-5 p-5 shadow-xl grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
                 <div className="flex flex-col items-center h-32">
                     <label className="text-xl font-bold" htmlFor="name">Your Name:</label>
                     <input
@@ -120,7 +120,7 @@ const Support = () => {
                         onChange={handleChange}
                         required
                         placeholder="Enter phone Number"
-                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-12 w-full"
+                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-12 w-3/4 lg:w-full"
                     />
                 </div>
 
@@ -133,7 +133,7 @@ const Support = () => {
                         onChange={handleChange}
                         required
                         placeholder="Enter details"
-                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-12 w-full"
+                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-16 lg:h-12 w-full"
                     />
                 </div>
 
@@ -146,11 +146,11 @@ const Support = () => {
                         onChange={handleChange}
                         required
                         placeholder="Enter your Address"
-                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-12 w-full"
+                        className="shadow-xl border border-gray-200 rounded text-center p-2 h-16 lg:h-12 w-full"
                     />
                 </div>
 
-                <div className="col-span-3 flex justify-center">
+                <div className="col-span-1 lg:col-span-3 flex justify-center">
                     <button className="border border-purple-700 px-4 py-2 h-12 rounded font-bold text-white bg-purple-600" type="submit">
                         Submit
                     </button>

@@ -47,7 +47,7 @@ const CartList = () => {
 
     return (
         <div className="w-3/4 mx-auto">
-{cart.length}
+{/* {cart.length} */}
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Cart | Gadget Heaven</title>
@@ -58,7 +58,7 @@ const CartList = () => {
                 <h3 className="text-xl font-bold">Cart</h3>
                 <div className="flex flex-col lg:flex-row items-center gap-5">
                     <h3 className="text-xl font-bold">Total Cost: {totalCost.toFixed(2)}</h3>
-                    <div className="flex gap-2">
+                    <div className="flex flex-col lg:flex-row gap-2">
                         <button 
                             onClick={handleSortByPrice} 
                             className="bg-transparent border border-purple-700 text-purple-700 p-2 rounded-full font-bold px-3 flex items-center gap-2"
