@@ -37,43 +37,44 @@ const router = createBrowserRouter([
           {
             path: '/',
             element: <AllProduct />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'laptops',
             element: <Laptops />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'phones',
             element: <Phones />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'accessories',
             element: <Accessories />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'smartwatches',
             element: <SmartWatches />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'macbook',
             element: <Macbook />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
           {
             path: 'iphone',
             element: <Iphone />,
-            loader: () => fetch('../public/fakeData.json'),
+            loader: () => fetch('/fakeData.json'),
           },
         ]
       },
       {
         path: 'statistics',
         element: <Statistics />,
+        loader: () => fetch('/fakeData.json'),
       },
       {
         path: 'dashboard',
@@ -96,7 +97,7 @@ const router = createBrowserRouter([
       {
         path: 'details/:id',
         element: <Details />,
-        loader: () => fetch('../public/fakeData.json'),
+        loader: () => fetch('/fakeData.json'),
       },
     ]
   },

@@ -4,7 +4,7 @@ Your go-to destination for the latest and greatest gadgets! This is a responsive
 
 ## 🌐 Live Site
 
-Visit the live site here: [GadgetHeaven on Surge](https://smmaksudulhaque2000.surge.sh/)
+Visit the live site here: [GadgetHeaven on Surge](https://maksudulhaque2000.surge.sh/)
 
 ---
 

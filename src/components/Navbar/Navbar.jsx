@@ -55,12 +55,12 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end gap-5 pr-4">
-        <NavLink to={"cartlist"}>
+        <NavLink to={"/dashboard/cartlist"}>
           <button>
             <MdOutlineShoppingCart className="text-2xl lg:text-3xl" />
           </button>
         </NavLink>
-        <NavLink to={"wishlist"}>
+        <NavLink to={"/dashboard/wishlist"}>
           <button>
             <GiSelfLove className="text-2xl lg:text-3xl" />
           </button>

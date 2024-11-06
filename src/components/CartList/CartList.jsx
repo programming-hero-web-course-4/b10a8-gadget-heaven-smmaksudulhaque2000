@@ -87,7 +87,7 @@ const CartList = () => {
 
             {purchaseSuccess && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="w-1/4 bg-white p-5 rounded-lg text-center flex flex-col items-center justify-center gap-5">
+                    <div className="w-3/4 lg:w-1/4 bg-white p-5 rounded-lg text-center flex flex-col items-center justify-center gap-5">
                         <img src={mark} alt="Mark" />
                         <h3 className="text-2xl font-bold text-purple-700">Payment Successfully</h3>
                         <hr className="border border-gray-500 w-full my-2" />
